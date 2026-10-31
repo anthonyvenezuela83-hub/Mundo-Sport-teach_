@@ -3,369 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo SPORT & tech - Tecnología para tu Movimiento</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Mundo Sport y Tech</title>
     <style>
-        :root {
-            --primary: #00d2ff;
-            --secondary: #3a7bd5;
-            --dark: #0f172a;
-            --darker: #0b0f19;
-            --light: #f8fafc;
-            --accent: #ff3366;
-            --card-bg: #1e293b;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-        }
-
         body {
-            background-color: var(--darker);
-            color: var(--light);
-            line-height: 1.6;
+            background-color: #0b0f19;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
         }
-
-        header {
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .header-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            padding: 15px 20px;
+            gap: 15px;
+            margin-bottom: 30px;
         }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-container img {
-            width: 50px;
-            height: 50px;
+        .logo-img {
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid var(--primary);
+            border: 2px solid #00d2ff;
         }
-
-        .logo-text h1 {
-            font-size: 1.2rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .brand-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #00d2ff;
         }
-
-        .logo-text p {
-            font-size: 0.75rem;
-            color: #94a3b8;
+        .brand-info h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .brand-info p {
+            margin: 5px 0 0 0;
+            font-size: 12px;
             letter-spacing: 1px;
+            color: #a0aec0;
         }
-
-        .whatsapp-btn-header {
-            background: #25d366;
+        .whatsapp-btn {
+            background-color: #25d366;
             color: white;
-            padding: 8px 16px;
-            border-radius: 50px;
+            padding: 10px 20px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: transform 0.3s ease;
+            font-weight: bold;
+            display: inline-block;
         }
-
-        .whatsapp-btn-header:hover {
-            transform: scale(1.05);
+        .description {
+            font-size: 16px;
+            color: #e2e8f0;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            line-height: 1.5;
         }
-
-        .hero {
-            padding: 160px 20px 80px;
-            text-align: center;
-            background: linear-gradient(rgba(11, 15, 25, 0.8), rgba(11, 15, 25, 0.95)), url('1000918449.jpg') no-repeat center center/cover;
+        .stock-section h2 {
+            font-size: 28px;
+            margin-bottom: 5px;
         }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
-        }
-
-        .hero h2 span {
-            color: var(--primary);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #cbd5e1;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 40px;
-            font-weight: 700;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
+        .underline {
             width: 60px;
             height: 4px;
-            background: var(--primary);
-            margin: 10px auto 0;
+            background-color: #00d2ff;
+            margin: 0 auto 30px auto;
             border-radius: 2px;
         }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
         .product-card {
-            background: var(--card-bg);
-            border-radius: 16px;
+            background-color: #161b22;
+            border-radius: 12px;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease;
+            max-width: 350px;
+            margin: 0 auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
         }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .media-container {
-            position: relative;
+        .product-card img {
             width: 100%;
             height: 250px;
-            background: #000;
-            overflow: hidden;
-        }
-
-        .media-container img, .media-container video {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
-            transition: opacity 0.3s ease;
+            display: block;
         }
-
-        .media-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-        }
-
-        .media-container:hover video {
-            opacity: 1;
-        }
-
-        .media-container:hover img {
-            opacity: 0;
-        }
-
         .product-info {
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
+            padding: 15px;
         }
-
-        .product-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .product-price {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-
-        .product-features {
-            list-style: none;
-            margin-bottom: 25px;
-            flex-grow: 1;
-        }
-
-        .product-features li {
-            font-size: 0.9rem;
-            color: #94a3b8;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .product-features li i {
-            color: var(--primary);
-        }
-
-        .buy-btn {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: 700;
-            text-align: center;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            cursor: pointer;
-            transition: opacity 0.3s ease;
-        }
-
-        .buy-btn:hover {
-            opacity: 0.9;
-        }
-
-        footer {
-            background: var(--dark);
-            text-align: center;
-            padding: 40px 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #94a3b8;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 2rem;
-            }
+        .product-info h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="nav-container">
-            <div class="logo-container">
-                
- <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=150&auto=format&fit=crop&q=80" alt="Logo Mundo Sport y Tech" class="logo-img" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
-                    
-                    <h1>Mundo SPORT & tech</h1>
-                    <p>TECNOLOGÍA PARA TU MOVIMIENTO</p>
-                </div>
-            </div>
-            <a href="https://wa.me/584160445660?text=Hola,%20estoy%20interesado%20en%20los%20productos%20de%20Mundo%20Sport%20%26%20Tech" class="whatsapp-btn-header" target="_blank">
-                <i class="fab fa-whatsapp"><span>Contáctame</span></i>
-            </a>
+    <!-- ENCABEZADO CON LOGO Y BOTÓN DE WHATSAPP -->
+    <header class="header-container">
+        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=150&auto=format&fit=crop&q=80" alt="Logo Mundo Sport y Tech" class="logo-img">
+        
+        <div class="brand-info">
+            <h1>Mundo SPORT</h1>
+            <h2>& tech</h2>
+            <p>TECNOLOGÍA PARA TU MOVIMIENTO</p>
         </div>
+        
+        <a href="https://wa.me/" class="whatsapp-btn">💬 Contáctame</a>
     </header>
 
-    <section class="hero">
-        <h2>Lleva tu rendimiento al <span>siguiente nivel</span></h2>
-        <p>Selecciono personalmente lo último en tecnología deportiva, relojes tácticos y accesorios de alto rendimiento para acompañar cada uno de tus desafíos diarios.</p>
-    </section>
+    <!-- DESCRIPCIÓN DE LA MARCA -->
+    <p class="description">
+        Selecciono personalmente lo último en tecnología deportiva, relojes tácticos y accesorios de alto rendimiento para acompañar cada uno de tus desafíos diarios.
+    </p>
 
-    <div class="container">
-        <h3 class="section-title">Mi Stock Disponible</h3>
-        
-        <div class="product-grid">
-            <!-- Producto 1: Reloj -->
-            <div class="product-card">
-                <div class="media-container">
-                    <img src="1000917482.jpg" alt="GT Grand Touring Watch">
-                    <video src="1000918544.mp4" muted loop autoplay playsinline></video>
-                </div>
-                <div class="product-info">
-                    <h4 class="product-title">Reloj GT Grand Touring</h4>
-                    <div class="product-price">$20.00</div>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Subesferas de cronógrafo de precisión (45-min, hora, sec)</li>
-                        <li><i class="fas fa-check"></i> Marcadores luminosos y bisel giratorio</li>
-                        <li><i class="fas fa-check"></i> Correa de silicona perforada con costura de contraste</li>
-                        <li><i class="fas fa-check"></i> Diseño audaz, deportivo y resistente</li>
-                    </ul>
-                    <a href="https://wa.me/584160445660?text=Hola,%20quiero%20comprar%20el%20Reloj%20GT%20Grand%20Touring%20por%20$20" class="buy-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
-                    </a>
-                </div>
-            </div>
+    <!-- SECCIÓN DE STOCK DISPONIBLE -->
+    <section class="stock-section">
+        <h2>Mi Stock Disponible</h2>
+        <div class="underline"></div>
 
-            <!-- Producto 2: Lentes Azules -->
-            <div class="product-card">
-                <div class="media-container">
-                    <img src="1000917483.jpg" alt="Performance Sports Eyewear">
-                    <video src="1000918675.mp4" muted loop autoplay playsinline></video>
-                </div>
-                <div class="product-info">
-                    <h4 class="product-title">Lentes Performance Eyewear</h4>
-                    <div class="product-price">$20.00</div>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Protección UV400 y lentes resistentes al impacto</li>
-                        <li><i class="fas fa-check"></i> Montura TR90 flexible y cómoda</li>
-                        <li><i class="fas fa-check"></i> Ingeniería optimizada para máxima resistencia</li>
-                        <li><i class="fas fa-check"></i> Estilo deportivo de alto rendimiento</li>
-                    </ul>
-                    <a href="https://wa.me/584160445660?text=Hola,%20quiero%20comprar%20los%20Lentes%20Performance%20Eyewear%20por%20$20" class="buy-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <!-- Producto 3: Lentes Rosas (The Edge) -->
-            <div class="product-card">
-                <div class="media-container">
-                    <img src="1000917485.jpg" alt="The Edge Pink Mirror Lens">
-                    <video src="1000918675.mp4" muted loop autoplay playsinline></video>
-                </div>
-                <div class="product-info">
-                    <h4 class="product-title">Lentes The Edge (Pink Mirror)</h4>
-                    <div class="product-price">$20.00</div>
-                    <ul class="product-features">
-                        <li><i class="fas fa-check"></i> Protección UV400 de alta claridad</li>
-                        <li><i class="fas fa-check"></i> Diseño ligero y ergonómico</li>
-                        <li><i class="fas fa-check"></i> Lente de espejo rosa con diseño "V" llamativo</li>
-                        <li><i class="fas fa-check"></i> Ideales para running y ciclismo</li>
-                    </ul>
-                    <a href="https://wa.me/584160445660?text=Hola,%20quiero%20comprar%20los%20Lentes%20The%20Edge%20por%20$20" class="buy-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
-                    </a>
-                </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=80" alt="GT Grand Touring Watch">
+            
+            <div class="product-info">
+                <h3>GT Grand Touring Watch</h3>
             </div>
         </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Mundo SPORT & tech. Todos los derechos reservados. Gestionado de manera independiente.</p>
-    </footer>
+    </section>
 
 </body>
 </html>
